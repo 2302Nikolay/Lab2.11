@@ -1,14 +1,9 @@
 def mod_list(lst):
     def m_lst(typ):
         if typ == 1:
-            for i in lst:
-                if i % 2 > 0:
-                    lst.remove(i)
+            return list(filter(lambda x: (x % 2) > 0, lst))
         elif typ == 0:
-            for i in lst:
-                if i % 2 == 0:
-                    lst.remove(i)
-        return lst
+            return list(filter(lambda x: (x % 2) < 0, lst))
     return m_lst
 
 
