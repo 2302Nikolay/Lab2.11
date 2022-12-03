@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # _*_ coding: utf-8 _*_
 
-
+# Пример 2
 def fun1(a):
     x = a * 3
 

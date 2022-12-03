@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+# _*_ coding: utf-8 _*_
+
+# Индивидуальное задание вариант 1
 def mod_list(lst):
     def m_lst(typ):
         if typ == 1:
@@ -12,6 +16,7 @@ def mod_list(lst):
     return m_lst
 
 
-mylist = list(map(int, input().split()))
-a = int(input("Введите:\n 0, если хотите удалить чётные\n 1, если хотите удалить нечётные\n"))
-print(mod_list(mylist)(a))
+if __name__ == '__main__':
+    mylist = list(map(int, input().split()))
+    a = int(input("Введите:\n 0, если хотите удалить чётные\n 1, если хотите удалить нечётные\n"))
+    print(mod_list(mylist)(a))

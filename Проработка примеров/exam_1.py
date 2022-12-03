@@ -2,6 +2,7 @@
 # _*_ coding: utf-8 _*_
 
 
+# Пример 1
 def mul5(a):
     def helper(b):
         return a * b
