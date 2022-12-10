@@ -4,15 +4,12 @@
 # Индивидуальное задание вариант 1
 def mod_list(lst):
     def m_lst(typ):
+        ar = []
         if typ == 1:
-            for i in lst:
-                if i % 2 > 0:
-                    lst.remove(i)
+            ar = list(filter(lambda x: not int(x) % 2, lst))
         elif typ == 0:
-            for i in lst:
-                if i % 2 == 0:
-                    lst.remove(i)
-        return lst
+            ar = list(filter(lambda x: int(x) % 2, lst))
+        return ar
     return m_lst
 
 
