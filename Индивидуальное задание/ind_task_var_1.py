@@ -6,9 +6,11 @@ def mod_list(lst):
     def m_lst(typ):
         ar = []
         if typ == 1:
-            ar = list(filter(lambda x: not int(x) % 2, lst))
+            # ar = list(filter(lambda x: not int(x) % 2, lst))
+            ar = [i for i in lst if i % 2 == 0]
         elif typ == 0:
-            ar = list(filter(lambda x: int(x) % 2, lst))
+            # ar = list(filter(lambda x: int(x) % 2, lst))
+            sr = [i for i in lst if i % 2 != 0]
         return ar
     return m_lst
 
